@@ -1,0 +1,219 @@
+BoxLayout:
+                orientation: "horizontal"
+                size_hint_y: None
+                height: "150dp"
+
+                Image:
+                    keep_ratio: False
+                    allow_stretch: True
+                    size_hint_x: 0.4
+                    source: "Im/smeg-blanche-avec-buse-bcc02whmeu.jpg"
+
+                Label:
+                    text: "Nom du produit"
+                    font_size: '18sp'
+                    color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                    size_hint_x: 0.25
+
+                Label:
+                    text: "Prix du produit"
+                    font_size: '18sp'
+                    color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                    size_hint_x: 0.2
+
+                Button:
+                    text: "Détails"
+                    size_hint_x: 0.15
+                    background_color: 0.44, 0.26, 0.14, 1  # Couleur du bouton en dégradé de marron
+                    color: 0.96, 0.87, 0.70, 1  # Couleur du texte blanc
+                    on_press:
+                        app.manager.push("product_details_page")
+                        app.manager.get_screen("product_details_page").children[0].set_product_details("Im/smeg-blanche-avec-buse-bcc02whmeu.jpg", "Nom du produit", "Description du produit")  # Remplacez ceci par les détails du produit
+
+
+            BoxLayout:
+                orientation: "horizontal"
+                size_hint_y: None
+                height: "150dp"
+
+                Image:
+                    keep_ratio: False
+                    allow_stretch: True
+                    size_hint_x: 0.4
+                    source: "Im/thera-matt-pro-machine-a-expresso-semi-automatique-20-bars.jpg"
+
+                Label:
+                    text: "Nom du produit"
+                    font_size: '18sp'
+                    color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                    size_hint_x: 0.25
+
+                Label:
+                    text: "Prix du produit"
+                    font_size: '18sp'
+                    color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                    size_hint_x: 0.2
+
+                Button:
+                    text: "Détails"
+                    size_hint_x: 0.15
+                    background_color: 0.44, 0.26, 0.14, 1  # Couleur du bouton en dégradé de marron
+                    color: 0.96, 0.87, 0.70, 1  # Couleur du texte blanc
+                    on_press:
+                        app.manager.push("product_details_page")
+                        app.manager.get_screen("product_details_page").children[0].set_product_details("Im/thera-matt-pro-machine-a-expresso-semi-automatique-20-bars.jpg", "Nom du produit", "Description du produit")  # Remplacez ceci par les détails du produit
+
+            BoxLayout:
+                orientation: "horizontal"
+                size_hint_y: None
+                height: "150dp"
+
+                Image:
+                    keep_ratio: False
+                    allow_stretch: True
+                    size_hint_x: 0.4
+                    source: "Im/machine-cafe-automatique-grain-delonghi-ecam-65055ms-delonghi.jpg"
+
+                Label:
+                    text: "Nom du produit"
+                    font_size: '18sp'
+                    color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                    size_hint_x: 0.25
+
+                Label:
+                    text: "Prix du produit"
+                    font_size: '18sp'
+                    color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                    size_hint_x: 0.2
+
+                Button:
+
+                    text: "Détails"
+                    size_hint_x: 0.15
+                    background_color: 0.44, 0.26, 0.14, 1  # Couleur du bouton en dégradé de marron
+                    color: 0.96, 0.87, 0.70, 1  # Couleur du texte blanc
+                    on_press:
+                        app.manager.push("product_details_page")
+                        app.manager.get_screen("product_details_page").children[0].set_product_details("Im/machine-cafe-automatique-grain-delonghi-ecam-65055ms-delonghi.jpg", "Nom du produit", "Description du produit")  # Remplacez ceci par les détails du produit
+
+            BoxLayout:
+                orientation: "horizontal"
+                size_hint_y: None
+                height: "150dp"
+
+                Image:
+                    keep_ratio: False
+                    allow_stretch: True
+                    size_hint_x: 0.4
+                    source: "Im/House-53.jpg"
+
+                Label:
+                    text: "Nom du produit"
+                    font_size: '18sp'
+                    color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                    size_hint_x: 0.25
+
+                Label:
+                    text: "Prix du produit"
+                    font_size: '18sp'
+                    color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                    size_hint_x: 0.2
+
+                Button:
+                    text: "Détails"
+                    size_hint_x: 0.15
+                    background_color: 0.44, 0.26, 0.14, 1  # Couleur du bouton en dégradé de marron
+                    color: 0.96, 0.87, 0.70, 1  # Couleur du texte blanc
+                    on_press:
+                        app.manager.push("product_details_page")
+                        app.manager.get_screen("product_details_page").children[0].set_product_details("Im/House-53.jpg", "Nom du produit", "Description du produit")  # Remplacez ceci par les détails du produit
+
+
+
+
+
+<ProductCatalog@Screen>:
+    BoxLayout:
+        id: myb
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+        canvas.before:
+            Color:
+                rgba: 0, 0, 0, 0  # Couleur de fond noir
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        FloatLayout:
+            size_hint_y: 0.35
+
+            Image:
+                keep_ratio: False
+                allow_stretch: True
+                source: "Im/differents-cafes-1024x683-c-default.jpg"
+                size_hint: 1, 1
+                pos_hint: {"x": 0, "y": 0}
+
+            Button:
+                text: "< Retour"
+                halign: "left"
+                size_hint: 0.1, 0.15
+                pos_hint: {"x": 0, "top": 1}
+                background_color: 0.44, 0.26, 0.14, 1  # Couleur du bouton en dégradé de marron
+                color: 0.96, 0.87, 0.70, 1  # Couleur du texte blanc
+                on_press:
+                    app.manager.pop()
+
+
+        ScrollView:
+            id : my_scrollview
+            size_hint_y: 0.65
+            BoxLayout:
+                id: product_list
+                orientation: "vertical"
+                size_hint_y: None
+                height: self.minimum_height
+
+
+                # Exemple de produit
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint_y: None
+                    height: "150dp"
+
+                    Image:
+                        keep_ratio: False
+                        allow_stretch: True
+                        size_hint_x: 0.4
+                        source: "Im/brx_postcardDeskLarge.jpg"
+
+                    Label:
+                        text: "Nom du produit"
+                        font_size: '18sp'
+                        color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                        size_hint_x: 0.25
+
+                    Label:
+                        text: "Prix du produit"
+                        font_size: '18sp'
+                        color: 0.44, 0.26, 0.14, 1  # Couleur du texte en dégradé de marron
+                        size_hint_x: 0.2
+
+                    Button:
+                        text: "Détails"
+                        size_hint_x: 0.15
+                        background_color: 0.44, 0.26, 0.14, 1  # Couleur du bouton en dégradé de marron
+                        color: 0.96, 0.87, 0.70, 1  # Couleur du texte blanc
+                        on_press:
+                            app.manager.push("product_details_page")
+
+
+
+
+Button:
+                text: ""
+                background_color: 0.44, 0.26, 0.14, 1  # Couleur du bouton en dégradé de marron
+                color: 0.96, 0.87, 0.70, 1  # Couleur du texte blanc
+                on_press: app.manager.push("product_details_page")
+                size_hint: 1, .2

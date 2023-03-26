@@ -1,0 +1,81 @@
+import requests
+import json
+
+import kivy
+from kivy.app import App
+from kivy.lang import Builder
+from kivy.properties import ObjectProperty
+from kivy.uix.anchorlayout import AnchorLayout
+from kivy.uix.boxlayout import BoxLayout
+
+from kivy.factory import Factory
+
+from navigation_screen_manager import NavigationScreenManager
+
+Builder.load_file("home.kv")
+
+
+class MyScreenManager(NavigationScreenManager):
+    pass
+
+
+class PayTonKawaApp(App):
+    manager = ObjectProperty(None)
+
+    def build(self):
+        self.manager = MyScreenManager()
+        return self.manager
+
+
+class HomeScreen(AnchorLayout):
+    pass
+
+
+class InscriptionForm(BoxLayout):
+
+    def getInputs(self):
+        input = []
+
+        for child in self.children:
+            print("Nom :", child)
+            if isinstance(child, kivy.uix.textinput.TextInput):
+                input.append(child.text)
+
+        # TODO 4 : Envoyé ces informations à l'API input contient
+
+
+class Connexion(AnchorLayout):
+    pass
+
+
+class QRcode(BoxLayout):
+
+    def authentification(self, app_manager):
+        labels = []
+        for child in self.children:
+            box_layout = child
+            children2 = box_layout.children
+            for child2 in children2:
+                if isinstance(child2, kivy.uix.label.Label):
+                    labels.append(child2)
+        print("Label text:", labels[2].text)  # Donné dans le qrcode
+
+        if (True):
+            app_manager.push("product_catalog_page")
+
+        # TODO 5 : Reception du mdp pour validation et transition ecran produit catalog
+
+
+# TODO 1 : Fonction Validation mdp et inscription
+# TODO 2 : Fonction AR  
+# TODO 3 : Fonction Affichage des produits 
+#
+PayTonKawaApp().run()
+
+url = "http://54.221.230.111:8000/api/products/"
+response = requests.get(url)
+data = json.loads(response.text)
+
+# Parcourir les données et afficher chaque donnée
+
+print("id: ",data)

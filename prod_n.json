@@ -1,0 +1,50 @@
+[
+{
+    "id": 1,
+    "name": "Cafe instantane",
+    "description": "3 gammes de cafe : Arabica, robusta, java",
+    "details": "Carton de 3x5 sachets de 500g de cafe instantane, ideal pour les distributeur de cafe. Un cafe instantane de haute qualite a un prix super bas. Un excellent goût avec une belle arriere-bouche cremeuse. Ce cafe est specialement developpe pour la machine a espresso haute pression.",
+    "price": "3,99\\nEUROS",
+    "stock": 150
+  },
+  {
+    "id": 2,
+    "name": "Cafe en grains 97% Arabica 3% Arome",
+    "description": "Cafe aromatise : Caramel, Coco, Vanille",
+    "details": "Un cafe Arabica aromatise dans notre atelier de torrefaction artisanale a Oyonnax. Retrouvez un cafe leger qui se consomme tres bien tout au long de la journee.",
+    "price": "5.99\\nEUROS",
+    "stock": 150
+  },
+  {
+    "id": 3,
+    "name": "Tasses de cafe en porcelaine",
+    "description": "Tasse a cafe en porcelaine, 180ml, design elegant et moderne.",
+    "details": "Une simple tasse de cappuccino en porcelaine blanche pour savourer avec style de delicieuses boissons a base de cafe au quotidien ou a l\\'occasion d'\\evenements speciaux. Design rustique accrocheur, Constituez un set avec la sous-tasse assortie, Compatibles avec les machines a cafe. Convient egalement a la restauration grace a sa forme pratique, Parfaitement integrable a la vaisselle New Cottage Basic. Dimensions : 8x8x6cm",
+    "price": "4.99\\nEUROS",
+    "stock": 300
+  },
+  {
+    "id": 4,
+    "name": "Moulin a cafe",
+    "description": "Acier INOX - 6 Niveaux Reglables\\nBroyeur Portable Grains De Cafe",
+    "details": "ACIER INOXYDABLE - Fabrique en acier inoxydable, le moulin a cafe est solide et neutre en gout pour ne pas alterer les aromes du cafe. Il ne rouille pas et peut etre facilement demonte et lave a la main. PRESERVE LES AROMES - Moudre manuellement evite la surchauffe des grains et preserve les aromes de cafe. Les composants sans BPA assurent une longue fraîcheur et prolonge l\\'intensite du gout et odeur du cafe.",
+    "price": "19.99\\nEUROS",
+    "stock": 100
+  },
+  {
+    "id": 5,
+    "name": "Machine a cafe, modele C45PTK",
+    "description": "Machine expresso pour preparer des boissons cafe et lactees - Couleurs : Marron, Blanc, Rouge",
+    "details": "Son interface simplissime permet a tous les utilisateurs d\\'acceder aux intensites de cafe proposees par ce bijou de technologie et de savourer de delicieuses boissons chaudes.Type de cafe : grain, Nombre de tasses : 1 , Panneau de commande : bouton manuel, Capacite du bac a grains : 150 g, Capacite du reservoir d\\'eau : 1,4 L",
+    "price": "149.99\\nEUROS",
+    "stock": 50
+  },
+  {
+   "id": 6,
+   "name": "Grande machine a cafe, modele C225PTK",
+   "description": "Machine a Expresso avec Broyeur, 2L , Noir Sesame",
+   "details": "Controle de la dose a la machine : le moulin a cafe conique integre puis broie les grains et insere la bonne quantite de cafe directement dans le porte. Filtre pour un resultat ideal avec n\\'importe quel melange.\\nType de cafe : grain\\nNombre de tasses : 2\\nCapacite du bac a grains : 250 g\\nCapacite du reservoir d\\'eau : 1,5 L x 2",
+   "price": "989,99\\nEUROS",
+   "stock": 20
+  }
+]

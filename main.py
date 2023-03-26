@@ -299,13 +299,15 @@ class QRcode(Screen):
                     labels.append(child2)
         info_qrcode = labels[2].text
 
-        if (len(info_qrcode) > 0):
+        if (len(info_qrcode) > 0 and info_qrcode.find("access") != -1 ):
             tokens = info_qrcode[info_qrcode.find("access") + 10:len(info_qrcode) - 3]
             print("token =", tokens)
             token = 'Bearer' + ' ' + str(tokens)
             header = {'Authorization': token}
             url = 'http://127.0.0.1:8000/api/products/'
+
             response = requests.get(url, json=data, headers=header)
+            print ("Reponse = ",response)
             products = response.json()
             products = json.dumps(products)
             print(products)
@@ -314,10 +316,10 @@ class QRcode(Screen):
 
             # TODO Birane 1 : La variable token contient la clé d'acces
             # vvvvv  fonction pour passer au screen suivant
-        productD = app_manager.get_screen("product_catalog_page")
-        print(productD.ids)
-        print(productD)
-        app_manager.push("product_catalog_page")
+            productD = app_manager.get_screen("product_catalog_page")
+            print(productD.ids)
+            print(productD)
+            app_manager.push("product_catalog_page")
 
 
 # TODO Abro 1 : Fonction AR
